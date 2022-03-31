@@ -38,5 +38,5 @@ jobs:
 #         IMAGE_TAG: latest
       run: |
         docker build -t hengsgg .
-        docker tag hengsgg:latest 728116505069.dkr.ecr.ap-northeast-2.amazonaws.com/hengsgg:latest
-        docker push 728116505069.dkr.ecr.ap-northeast-2.amazonaws.com/hengsgg:latest
+        docker tag jangsanghyeon:latest 172981486452.dkr.ecr.ap-northeast-2.amazonaws.com/jangsanghyeon:latest
+        docker push 172981486452.dkr.ecr.ap-northeast-2.amazonaws.com/jangsanghyeon:latest
