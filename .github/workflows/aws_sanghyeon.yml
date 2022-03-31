@@ -38,5 +38,5 @@ jobs:
 #         IMAGE_TAG: latest
       run: 
         docker build -t jangsanghyeon .
-        docker tag jangsanghyeon:latest 172981486452.dkr.ecr.us-east-1.amazonaws.com/jangsanghyeon:latest
-        docker push 172981486452.dkr.ecr.us-east-1.amazonaws.com/jangsanghyeon:latest
+        docker tag jangsanghyeon:latest 172981486452.dkr.ecr.ap-northeast-2.amazonaws.com/jangsanghyeon:latest
+        docker push 172981486452.dkr.ecr.ap-northeast-2.amazonaws.com/jangsanghyeon:latest
