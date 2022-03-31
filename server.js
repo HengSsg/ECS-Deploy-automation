@@ -6,13 +6,10 @@ fastify.get('/', async (request, reply) => {
   return { hello: 'world' }
 })
 
-// Run the server!
-const start = async () => {
-  try {
-    await fastify.listen(3000)
-  } catch (err) {
-    fastify.log.error(err)
-    process.exit(1)
+fastify.listen({ host: "0.0.0.0", port: 3000 }, (err, address) => {
+  if (err) {
+    console.error(err);
+    process.exit(1);
   }
-}
-start()
+  console.log(`Server listening at ${address}`);
+});
