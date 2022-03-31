@@ -30,10 +30,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push image to Amazon ECR
-      env:
-        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: docker_nodejs_demo
-        IMAGE_TAG: v1.0
+
       run: |
         docker build -t hengsgg .
         docker tag hengsgg:latest 728116505069.dkr.ecr.ap-northeast-2.amazonaws.com/hengsgg:latest
