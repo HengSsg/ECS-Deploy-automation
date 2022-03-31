@@ -3,7 +3,7 @@ const fastify = require('fastify')({ logger: true })
 
 // Declare a route
 fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
+  return { hello: 'wooorld' }
 })
 
 fastify.listen({ host: "0.0.0.0", port: 3000 }, (err, address) => {
