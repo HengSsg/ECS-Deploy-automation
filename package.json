@@ -1,24 +1,35 @@
 {
   "name": "devops-01-p2-teami",
   "version": "1.0.0",
-  "description": "I조 입니다.",
-  "main": "server.js",
-  "dependencies": {
-    "fastify": "^3.27.4"
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI/issues"
   },
-  "homepage": "https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI#readme"
+  "homepage": "https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI#readme",
+  "dependencies": {
+    "fastify": "^3.0.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-autoload": "^3.10.0",
+    "fastify-sensible": "^3.1.2",
+    "fastify-cli": "^2.15.0"
+  },
+  "devDependencies": {
+    "tap": "^15.1.6"
+  }
 }
