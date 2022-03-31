@@ -1,0 +1,24 @@
+{
+  "name": "devops-01-p2-teami",
+  "version": "1.0.0",
+  "description": "I조 입니다.",
+  "main": "server.js",
+  "dependencies": {
+    "fastify": "^3.27.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI/issues"
+  },
+  "homepage": "https://github.com/cs-devops-bootcamp/devops-01-P2-TeamI#readme"
+}
