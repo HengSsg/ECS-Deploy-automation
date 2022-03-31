@@ -35,6 +35,7 @@ jobs:
         ECR_REPOSITORY: docker_nodejs_demo
         IMAGE_TAG: nodejs_demo_image
       run: |
+        tag: v.1.0
         docker build -t hengsgg .
         docker tag hengsgg:latest 728116505069.dkr.ecr.ap-northeast-2.amazonaws.com/hengsgg:latest
         docker push 728116505069.dkr.ecr.ap-northeast-2.amazonaws.com/hengsgg:latest
