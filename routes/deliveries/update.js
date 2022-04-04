@@ -1,10 +1,10 @@
 'use strict'
 
-// const { readAll } = require('../../model')
+// const { updateOne } = require('../../model')
 
 module.exports = async function (app, opts) {
-  app.get('/', async function (request, reply) {
-
+  app.put('/:id', async function (request, reply) {
+      
     reply
       .code(404)
       .header()
