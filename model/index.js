@@ -16,13 +16,13 @@ module.exports = {
           })
         return result
       },
-    updateOne: async (mongo, token) => {
-        const collection = mongo.db.collection('courier')
-        if(token=== "624a7813bad4c4fb9e3bd862"){
+    updateLocation: async (mongo,id,body) => {
+            const collection = mongo.db.collection('courier')
             const result = await collection.findOneAndUpdate({
-                "location": "37.550806,126.903781"
-            })
-            return result
-        }
-    }
+                _id: ObjectId(id)
+              },{
+                $set: body
+              })
+              return result
+          }
 }

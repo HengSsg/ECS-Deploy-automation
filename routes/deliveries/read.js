@@ -20,7 +20,5 @@ module.exports = async function (app, opts) {
       .code(200)
       .header('Content-Type', 'application/json')
       .send(result)
-
-      console.log(result)
   })
 }
