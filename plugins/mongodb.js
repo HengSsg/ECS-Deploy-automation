@@ -8,6 +8,6 @@ module.exports = fp(async function (fastify, opts) {
   }
   fastify.register(require('fastify-mongodb'), {
     forceClose: true,
-    url: 'mongodb://root:example@mongo-LB-1410fd68d4cb9cfc.elb.ap-northeast-2.amazonaws.com:27017/'
+    url: 'mongodb://root:example@teami-loadbalancer-cb78ef30e32ffd53.elb.ap-northeast-2.amazonaws.com:27017/'
   })
 })
