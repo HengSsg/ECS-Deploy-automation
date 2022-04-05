@@ -1,6 +1,6 @@
 'use strict'
 
-const { readOrder, readConsumer } = require('../../model')
+const { readOrder, readConsumer } = require('../../../model')
 
 module.exports = async function (app, opts) {
   app.get('/', async function (request, reply) {

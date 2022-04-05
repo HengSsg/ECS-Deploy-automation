@@ -1,6 +1,6 @@
 'use strict'
 
-const { updateLocation } = require('../../model')
+const { updateLocation } = require('../../../model')
 
 module.exports = async function (app, opts) {
   app.put('/', async function (request, reply) {

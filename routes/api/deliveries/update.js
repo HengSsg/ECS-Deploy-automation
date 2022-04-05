@@ -1,6 +1,6 @@
 'use strict'
 
-const { readOrder, readConsumer,updateOrderAcceptance, updateOrderStatus } = require('../../model')
+const { readOrder, readConsumer,updateOrderAcceptance, updateOrderStatus } = require('../../../model')
 
 module.exports = async function (app, opts) {
   app.put('/:id/acceptance', async function (request, reply) {
