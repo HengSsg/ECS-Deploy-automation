@@ -8,7 +8,7 @@ module.exports = async function (app, opts) {
     const consumer = await readConsumer(this.mongo, order.consumer_id)
 
     const result = {
-      "id" : order._id,
+      "_id" : order._id,
       "source" : order.restaurant,
       "destination" : {
         "address" : consumer.address
