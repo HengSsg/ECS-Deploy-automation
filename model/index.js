@@ -17,12 +17,30 @@ module.exports = {
         return result
       },
     updateLocation: async (mongo,id,body) => {
-            const collection = mongo.db.collection('courier')
-            const result = await collection.findOneAndUpdate({
-                _id: ObjectId(id)
-              },{
-                $set: body
-              })
-              return result
-          }
+        const collection = mongo.db.collection('courier')
+        const result = await collection.findOneAndUpdate({
+            _id: ObjectId(id)
+          },{
+            $set: body
+          })
+          return result
+      },
+      updateOrderAcceptance: async (mongo,id) => {
+        const collection = mongo.db.collection('order')
+        const result = await collection.findOneAndUpdate({
+            _id: ObjectId(id)
+          },{
+            $set: {"deliveryInfo":{"status" : "IN_DELIVERY"}}
+          })
+          return result
+      },
+      updateOrderStatus: async (mongo,id,body) => {
+        const collection = mongo.db.collection('order')
+        const result = await collection.findOneAndUpdate({
+            _id: ObjectId(id)
+          },{
+            $set: body
+          })
+          return result
+      }
 }
